@@ -1,6 +1,7 @@
-import base64
-from random import shuffle
+
 def register():
+    import base64
+    from random import shuffle
     #reading user name
     while True:
         try:

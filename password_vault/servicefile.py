@@ -4,12 +4,13 @@ Created on Sun Mar  3 11:58:17 2019
 
 @author: Brothers
 """
-#using this for importing os based operations
-import os
-#importing this for encoding
-import base64
+
 #defining function write
 def write(param1,param2):
+    #using this for importing os based operations
+    import os
+    #importing this for encoding
+    import base64
     #creating a folder a specified location
     os.makedirs("E:\\PROJ.RC\\python\\files\\catbot")
     str="this is my check file for"+ param1 + "with" +param2
