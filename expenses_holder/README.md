@@ -1,6 +1,7 @@
 This is program is made to keep your expenses that you made.
 
 Features:
+
         Reading your expenses by just refering to the date.
         
         Easy to store expenses.
