@@ -1,5 +1,0 @@
-
--------decoder---------
-
-base64.b64decode(encryptedline,'utf-8')
-
