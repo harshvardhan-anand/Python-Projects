@@ -1,0 +1,1 @@
+When I have used "sp.call" then window hanged but not with "Popen"

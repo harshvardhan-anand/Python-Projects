@@ -1,0 +1,3 @@
+Point of failure:-
+1. on saving if file extension is not given the the file in the directory will be replaced without promt.
+2. if text is too long it wont wrap even if the container ends

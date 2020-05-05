@@ -1,0 +1,9 @@
+1. desiner files are saved with .ui as extension
+
+2. converting a .ui file into code
+
+	in the cmd write:
+
+		pyuic5 -x desiner_file_name.ui -o output_file_have_code_name.py
+
+			x means execute, o means output file			
