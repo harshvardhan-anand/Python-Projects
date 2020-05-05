@@ -1,1 +1,0 @@
-This python program will get a meaning ful word from a jumbled string
