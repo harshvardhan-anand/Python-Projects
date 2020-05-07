@@ -89,6 +89,7 @@ class Ui_MainWindow(object):
 
     def power_off(self):
         self.udemy.setStyleSheet("")
+        self.github.setStyleSheet("")
         os.system("taskkill /f /im python.exe")
 
 if __name__ == "__main__":
