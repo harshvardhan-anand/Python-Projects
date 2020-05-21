@@ -1,0 +1,11 @@
+How to download pyaudio and pocketsphnix in windows:
+
+1. pip install pipwin
+2. pipwin install PyAudio (for microphone acess)
+3. pipwin install pocketsphinx (for offline transcription)
+
+Speech Recognition Python:
+
+Use library: pip install SpeechRecognition
+
+https://www.youtube.com/watch?v=MipJ9nfb190
