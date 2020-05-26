@@ -1,0 +1,1266 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20194.19.1211.1636                               -->
+<workbook original-version='18.1' source-build='2019.4.1 (20194.19.1211.1636)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='student-mat (student-mat)' inline='true' name='federated.0c47mld0y93y6115gri4f01s9zdj' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='student-mat' name='excel-direct.09ubu201ie9ol3124m1ab066l9mx'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Brothers/Desktop/Python/ongoing_project/MY STUFF/Kaggle/student-grade-prediction/student-mat.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.09ubu201ie9ol3124m1ab066l9mx' name='student-mat' table='[&apos;student-mat$&apos;]' type='table'>
+          <columns gridOrigin='A1:AG396:no:A1:AG396:0' header='yes' outcome='6'>
+            <column datatype='string' name='school' ordinal='0' />
+            <column datatype='string' name='sex' ordinal='1' />
+            <column datatype='integer' name='age' ordinal='2' />
+            <column datatype='string' name='address' ordinal='3' />
+            <column datatype='string' name='famsize' ordinal='4' />
+            <column datatype='string' name='Pstatus' ordinal='5' />
+            <column datatype='integer' name='Medu' ordinal='6' />
+            <column datatype='integer' name='Fedu' ordinal='7' />
+            <column datatype='string' name='Mjob' ordinal='8' />
+            <column datatype='string' name='Fjob' ordinal='9' />
+            <column datatype='string' name='reason' ordinal='10' />
+            <column datatype='string' name='guardian' ordinal='11' />
+            <column datatype='integer' name='traveltime' ordinal='12' />
+            <column datatype='integer' name='studytime' ordinal='13' />
+            <column datatype='integer' name='failures' ordinal='14' />
+            <column datatype='string' name='schoolsup' ordinal='15' />
+            <column datatype='string' name='famsup' ordinal='16' />
+            <column datatype='string' name='paid' ordinal='17' />
+            <column datatype='string' name='activities' ordinal='18' />
+            <column datatype='string' name='nursery' ordinal='19' />
+            <column datatype='string' name='higher' ordinal='20' />
+            <column datatype='string' name='internet' ordinal='21' />
+            <column datatype='string' name='romantic' ordinal='22' />
+            <column datatype='integer' name='famrel' ordinal='23' />
+            <column datatype='integer' name='freetime' ordinal='24' />
+            <column datatype='integer' name='goout' ordinal='25' />
+            <column datatype='integer' name='Dalc' ordinal='26' />
+            <column datatype='integer' name='Walc' ordinal='27' />
+            <column datatype='integer' name='health' ordinal='28' />
+            <column datatype='integer' name='absences' ordinal='29' />
+            <column datatype='integer' name='G1' ordinal='30' />
+            <column datatype='integer' name='G2' ordinal='31' />
+            <column datatype='integer' name='G3' ordinal='32' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>school</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[school]</local-name>
+            <parent-name>[student-mat]</parent-name>
+            <remote-alias>school</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sex</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[sex]</local-name>
+            <parent-name>[student-mat]</parent-name>
+            <remote-alias>sex</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[age]</local-name>
+            <parent-name>[student-mat]</parent-name>
+            <remote-alias>age</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>address</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[address]</local-name>
+            <parent-name>[student-mat]</parent-name>
+            <remote-alias>address</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>famsize</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[famsize]</local-name>
+            <parent-name>[student-mat]</parent-name>
+            <remote-alias>famsize</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pstatus</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Pstatus]</local-name>
+            <parent-name>[student-mat]</parent-name>
+            <remote-alias>Pstatus</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Medu</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Medu]</local-name>
+            <parent-name>[student-mat]</parent-name>
+            <remote-alias>Medu</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fedu</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Fedu]</local-name>
+            <parent-name>[student-mat]</parent-name>
+            <remote-alias>Fedu</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mjob</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Mjob]</local-name>
+            <parent-name>[student-mat]</parent-name>
+            <remote-alias>Mjob</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fjob</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Fjob]</local-name>
+            <parent-name>[student-mat]</parent-name>
+            <remote-alias>Fjob</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reason</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[reason]</local-name>
+            <parent-name>[student-mat]</parent-name>
+            <remote-alias>reason</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>guardian</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[guardian]</local-name>
+            <parent-name>[student-mat]</parent-name>
+            <remote-alias>guardian</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>traveltime</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[traveltime]</local-name>
+            <parent-name>[student-mat]</parent-name>
+            <remote-alias>traveltime</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>studytime</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[studytime]</local-name>
+            <parent-name>[student-mat]</parent-name>
+            <remote-alias>studytime</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>failures</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[failures]</local-name>
+            <parent-name>[student-mat]</parent-name>
+            <remote-alias>failures</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>schoolsup</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[schoolsup]</local-name>
+            <parent-name>[student-mat]</parent-name>
+            <remote-alias>schoolsup</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>famsup</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[famsup]</local-name>
+            <parent-name>[student-mat]</parent-name>
+            <remote-alias>famsup</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>paid</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[paid]</local-name>
+            <parent-name>[student-mat]</parent-name>
+            <remote-alias>paid</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>activities</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[activities]</local-name>
+            <parent-name>[student-mat]</parent-name>
+            <remote-alias>activities</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nursery</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[nursery]</local-name>
+            <parent-name>[student-mat]</parent-name>
+            <remote-alias>nursery</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>higher</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[higher]</local-name>
+            <parent-name>[student-mat]</parent-name>
+            <remote-alias>higher</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>internet</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[internet]</local-name>
+            <parent-name>[student-mat]</parent-name>
+            <remote-alias>internet</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>romantic</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[romantic]</local-name>
+            <parent-name>[student-mat]</parent-name>
+            <remote-alias>romantic</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>famrel</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[famrel]</local-name>
+            <parent-name>[student-mat]</parent-name>
+            <remote-alias>famrel</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>freetime</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[freetime]</local-name>
+            <parent-name>[student-mat]</parent-name>
+            <remote-alias>freetime</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>goout</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[goout]</local-name>
+            <parent-name>[student-mat]</parent-name>
+            <remote-alias>goout</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dalc</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Dalc]</local-name>
+            <parent-name>[student-mat]</parent-name>
+            <remote-alias>Dalc</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Walc</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Walc]</local-name>
+            <parent-name>[student-mat]</parent-name>
+            <remote-alias>Walc</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>health</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[health]</local-name>
+            <parent-name>[student-mat]</parent-name>
+            <remote-alias>health</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>absences</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[absences]</local-name>
+            <parent-name>[student-mat]</parent-name>
+            <remote-alias>absences</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>G1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[G1]</local-name>
+            <parent-name>[student-mat]</parent-name>
+            <remote-alias>G1</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>G2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[G2]</local-name>
+            <parent-name>[student-mat]</parent-name>
+            <remote-alias>G2</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>G3</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[G3]</local-name>
+            <parent-name>[student-mat]</parent-name>
+            <remote-alias>G3</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[student-mat]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:AG396:no:A1:AG396:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='DayTimeAlc' datatype='integer' name='[Dalc]' role='measure' type='quantitative' />
+      <column caption='FatherEdu' datatype='integer' name='[Fedu]' role='measure' type='quantitative' />
+      <column caption='FatherJob' datatype='string' name='[Fjob]' role='dimension' type='nominal' />
+      <column caption='MotherEdu' datatype='integer' name='[Medu]' role='measure' type='quantitative' />
+      <column caption='MotherJob' datatype='string' name='[Mjob]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='cohabitation' datatype='string' name='[Pstatus]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;A&quot;' value='Apart' />
+          <alias key='&quot;T&quot;' value='Together' />
+        </aliases>
+      </column>
+      <column caption='WeekendTimeAlc' datatype='integer' name='[Walc]' role='measure' type='quantitative' />
+      <column caption='activitiesXtrCurr' datatype='string' name='[activities]' role='dimension' type='nominal' />
+      <column datatype='string' name='[address]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;R&quot;' value='Rural' />
+          <alias key='&quot;U&quot;' value='Urban' />
+        </aliases>
+      </column>
+      <column aggregation='Sum' datatype='integer' name='[age]' role='dimension' type='ordinal' />
+      <column caption='FamilyRelation' datatype='integer' name='[famrel]' role='measure' type='quantitative' />
+      <column caption='familySize' datatype='string' name='[famsize]' role='dimension' type='nominal' />
+      <column caption='familyEduSupport' datatype='string' name='[famsup]' role='dimension' type='nominal' />
+      <column caption='paidExtraClass' datatype='string' name='[paid]' role='dimension' type='nominal' />
+      <column caption='reasonToConnect' datatype='string' name='[reason]' role='dimension' type='nominal' />
+      <column caption='extraEduSupport' datatype='string' name='[schoolsup]' role='dimension' type='nominal' />
+      <column datatype='string' name='[sex]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;F&quot;' value='Female' />
+          <alias key='&quot;M&quot;' value='Male' />
+        </aliases>
+      </column>
+      <column caption='traveltime' datatype='integer' name='[traveltime]' role='measure' type='quantitative' />
+      <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+      <extract count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/Brothers/Desktop/Python/ongoing_project/MY STUFF/Kaggle/student-grade-prediction/student-mat (student-mat).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='03/28/2020 12:18:12 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='student-mat (student-mat)' increment-value='%null%' refresh-type='create' rows-inserted='395' timestamp-start='2020-03-28 12:18:12.526' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>school</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[school]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>school</remote-alias>
+              <ordinal>0</ordinal>
+              <family>student-mat</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sex</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[sex]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sex</remote-alias>
+              <ordinal>1</ordinal>
+              <family>student-mat</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>age</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>age</remote-alias>
+              <ordinal>2</ordinal>
+              <family>student-mat</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>address</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[address]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>address</remote-alias>
+              <ordinal>3</ordinal>
+              <family>student-mat</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>famsize</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[famsize]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>famsize</remote-alias>
+              <ordinal>4</ordinal>
+              <family>student-mat</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pstatus</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Pstatus]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Pstatus</remote-alias>
+              <ordinal>5</ordinal>
+              <family>student-mat</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Medu</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Medu]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Medu</remote-alias>
+              <ordinal>6</ordinal>
+              <family>student-mat</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Fedu</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Fedu]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Fedu</remote-alias>
+              <ordinal>7</ordinal>
+              <family>student-mat</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Mjob</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Mjob]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Mjob</remote-alias>
+              <ordinal>8</ordinal>
+              <family>student-mat</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Fjob</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Fjob]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Fjob</remote-alias>
+              <ordinal>9</ordinal>
+              <family>student-mat</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>reason</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[reason]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>reason</remote-alias>
+              <ordinal>10</ordinal>
+              <family>student-mat</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>guardian</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[guardian]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>guardian</remote-alias>
+              <ordinal>11</ordinal>
+              <family>student-mat</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>traveltime</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[traveltime]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>traveltime</remote-alias>
+              <ordinal>12</ordinal>
+              <family>student-mat</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>studytime</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[studytime]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>studytime</remote-alias>
+              <ordinal>13</ordinal>
+              <family>student-mat</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>failures</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[failures]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>failures</remote-alias>
+              <ordinal>14</ordinal>
+              <family>student-mat</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>schoolsup</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[schoolsup]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>schoolsup</remote-alias>
+              <ordinal>15</ordinal>
+              <family>student-mat</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>famsup</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[famsup]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>famsup</remote-alias>
+              <ordinal>16</ordinal>
+              <family>student-mat</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>paid</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[paid]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>paid</remote-alias>
+              <ordinal>17</ordinal>
+              <family>student-mat</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>activities</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[activities]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>activities</remote-alias>
+              <ordinal>18</ordinal>
+              <family>student-mat</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>nursery</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[nursery]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>nursery</remote-alias>
+              <ordinal>19</ordinal>
+              <family>student-mat</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>higher</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[higher]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>higher</remote-alias>
+              <ordinal>20</ordinal>
+              <family>student-mat</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>internet</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[internet]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>internet</remote-alias>
+              <ordinal>21</ordinal>
+              <family>student-mat</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>romantic</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[romantic]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>romantic</remote-alias>
+              <ordinal>22</ordinal>
+              <family>student-mat</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>famrel</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[famrel]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>famrel</remote-alias>
+              <ordinal>23</ordinal>
+              <family>student-mat</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>freetime</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[freetime]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>freetime</remote-alias>
+              <ordinal>24</ordinal>
+              <family>student-mat</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>goout</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[goout]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>goout</remote-alias>
+              <ordinal>25</ordinal>
+              <family>student-mat</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Dalc</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Dalc]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Dalc</remote-alias>
+              <ordinal>26</ordinal>
+              <family>student-mat</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Walc</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Walc]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Walc</remote-alias>
+              <ordinal>27</ordinal>
+              <family>student-mat</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>health</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[health]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>health</remote-alias>
+              <ordinal>28</ordinal>
+              <family>student-mat</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>absences</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[absences]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>absences</remote-alias>
+              <ordinal>29</ordinal>
+              <family>student-mat</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>34</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>G1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[G1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>G1</remote-alias>
+              <ordinal>30</ordinal>
+              <family>student-mat</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>G2</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[G2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>G2</remote-alias>
+              <ordinal>31</ordinal>
+              <family>student-mat</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>G3</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[G3]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>G3</remote-alias>
+              <ordinal>32</ordinal>
+              <family>student-mat</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.556818' measure-ordering='alphabetic' measure-percentage='0.443182' show-aliased-fields='true' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <default-sorts>
+        <manual-sort column='[none:Forecast Indicator:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;Actual&quot;</bucket>
+            <bucket>&quot;Estimate&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+      </default-sorts>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='student-mat (student-mat)' name='federated.0c47mld0y93y6115gri4f01s9zdj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0c47mld0y93y6115gri4f01s9zdj'>
+            <column caption='cohabitation' datatype='string' name='[Pstatus]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;A&quot;' value='Apart' />
+                <alias key='&quot;T&quot;' value='Together' />
+              </aliases>
+            </column>
+            <column-instance column='[Pstatus]' derivation='Count' name='[cnt:Pstatus:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Pstatus]' derivation='None' name='[none:Pstatus:nk]' pivot='key' type='nominal' />
+            <column-instance column='[school]' derivation='None' name='[none:school:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[school]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0c47mld0y93y6115gri4f01s9zdj].[none:school:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0c47mld0y93y6115gri4f01s9zdj].[cnt:Pstatus:qk]</rows>
+        <cols>([federated.0c47mld0y93y6115gri4f01s9zdj].[none:Pstatus:nk] / [federated.0c47mld0y93y6115gri4f01s9zdj].[none:school:nk])</cols>
+      </table>
+      <simple-id uuid='{18C74E72-7EFF-4C0D-B9C5-FA5B4F9EEBD1}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0c47mld0y93y6115gri4f01s9zdj].[none:school:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0c47mld0y93y6115gri4f01s9zdj].[none:school:nk]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{841ED435-E2BC-4FD5-90ED-75BAB608ABB9}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='sheet 1' width='192'>
+      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
+      AS5PPi5rikjCjMN65/tPiqIoEoA0+P0jGAweXK473xb9aojSfu4cnWMBnIW1NCyqxm66d5t/
+      EgCha4qiKFnTB4jH43R2dt7tMsRXTNYEwGQyyRFA3HH3bgNNiDkgARC6JgEQuiYBELomARC6
+      JgEQuiYBELomARC6JgEQuiYBELqWNUMhxO3RNI25HPWo8NGkwPc2CYBO/LdfHubM1cE5+7xN
+      Syv4/p9tmLPPy5Q0gYSuSQCErkkAhK5JAISuzXonOBmdobenG38wQY6vnIoSL2oiRF9nF/6E
+      lZp5FTjNRoIT/XT1jeMoqKC80EMGk44JkbZZPgJohP1jjExOk0olaLtwgq6xCANt52npHiU4
+      0Mzx5gE0bYYzR08xEQrRdPokI3d14WihJ7N8BFBwFlaxtqCSeCRAU3gKJakxNhFg6bodlLpC
+      nPjjefzFwwRKN/LoKh+jFxvpnZqm2G394rcX4jbNyXWA9lNvcOhqmEUNKyjKsxJsN2ExG0Bx
+      4rAEmA5oODweFBQcToVgKAVALBbjo0krkskk4fC9ts549kilUnP6eclUdmyvOQlA7brHqFoR
+      pqXpFF39PlJanGgsCZYw4ZiLMpeV0GAAjTxCQXDkXG+Zmc2fzL9jMBiw2Wy3+gjxBdQ5np7R
+      oGbH9prlAKQY7b1K/1gMi9XE+FSI/ALwepxcPtfIiNGPP38BnoJcHKcP0ahWMto/zrINi2e3
+      LCE+NMs/Cwo5uflYlBiT/ikKa1exoNxD2fzlVOeZiDuq2NBQhmpws2p9A0o0Qt3ytRR57v1f
+      DvHVMOudYIszn0XL82982OykdslKaj/1kKugitUFVbNbjhCfIRfChK5JAISuSQCErkkAhK5J
+      AISuSQCErkkAhK5JAISuSQCErkkAhK5JAISuSQCErkkAhK5JAISuSQCErkkAhK5JAISuSQCE
+      rkkAhK5JAISuSQCErkkAhK5JAISuSQCErkkAhK5JAISuSQCErkkAhK5JAISuSQCErkkAhK7N
+      /jKpsRkunz7K2bYhPJVL2bZhBdpIK28fOs5M3IC3ag277q9nqOkIx5q68datYeuaBdiMkk0x
+      +2Y9AJEpP+ayBv5s/Q7aLx2lp2+KnHCY+s17WFxZcP1JoW4u9Jl5dN8+2o4fpnusmIVFntku
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
