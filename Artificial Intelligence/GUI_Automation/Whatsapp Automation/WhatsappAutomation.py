@@ -57,6 +57,7 @@ class WhatsappAutomation():
                     time.sleep(time_interval)
                 message_area.send_keys(message)
                 message_area.send_keys(Keys.ENTER)
+		#print(f"Sent count {i}")
             print('All {} messages are sent keeping time interval of {}!!'
                                             .format(count, time_interval))
             print('\nExiting in 10 seconds...')
