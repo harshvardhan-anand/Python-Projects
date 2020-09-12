@@ -1,0 +1,3 @@
+'charmap' codec can't encode character '\u1e41' in position 1: character maps to <undefined>'charmap' codec can't encode character '\u1e41' in position 1: character maps to <undefined>
+'function' object has no attribute 'encode'
+'function' object has no attribute 'encode'

@@ -11,8 +11,9 @@ class WhatsappAutomation():
             self.message_area = self.get_chrome(self.driver)
             self.send_message(self.count, self.message_area, 
                                         self.message, self.time_interval)
-        except:
-            print('\nPlease report the bug...')
+        except Exception as E:
+            print(E)
+            # print('\nPlease report the bug...')
 
     def create_chrome_driver(self):
         # 1
@@ -57,7 +58,8 @@ class WhatsappAutomation():
                     time.sleep(time_interval)
                 message_area.send_keys(message)
                 message_area.send_keys(Keys.ENTER)
-		#print(f"Sent count {i}")
+                if not(i%5):
+                    print(f"Sent count {i}")
             print('All {} messages are sent keeping time interval of {}!!'
                                             .format(count, time_interval))
             print('\nExiting in 10 seconds...')
