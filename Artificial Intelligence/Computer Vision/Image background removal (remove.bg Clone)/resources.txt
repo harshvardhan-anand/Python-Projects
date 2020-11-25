@@ -1,0 +1,13 @@
+https://medium.com/@chris.s.park/image-background-removal-using-opencv-part-1-da3695ac66b6
+
+
+1. Why do we need signaX in gaussian blur.
+2. How sigma affects the blur.
+3. How gaussian blur works.
+4. What is the correct dimension of the filter .
+
+---https://dsp.stackexchange.com/questions/10057/gaussian-blur-standard-deviation-radius-and-kernel-size
+
+How to find correct min and max val for sobel operator?
+Why  to normalise an image?
+How to imporve edge detection?
